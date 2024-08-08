@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import React from 'react'
 
 export const metadata : Metadata = {
@@ -10,7 +11,7 @@ export const metadata : Metadata = {
 
 const Product = () => {
   return (
-    <div>Products</div>
+    <h1><Link href={'product/1'} replace>product 1</Link></h1>
   )
 }
 
